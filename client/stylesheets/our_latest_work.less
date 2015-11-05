@@ -1,0 +1,181 @@
+.our-latest-work {
+  margin-top: -8em;
+  padding: 5em 0;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(63, 59, 72);
+    background-image: url('/images/our_latest_work.png');
+    // background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .work-image {
+    text-align: center;
+  }
+  .items {
+    list-style: none;
+    padding: 0;
+    font-size: 1em; // 14px / 14px
+    font-family: "FontAwesome";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.857;
+    text-align: left;
+  }
+  .tech-box {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      background-color: rgb(99, 95, 109);
+      padding-top: 1em;
+      width: 5.9em;// 82px / 14px
+      // height: 100px;
+      text-align: center;
+      margin-left: -2px;
+      margin-bottom: 2em;
+      i {
+        font-size: 2.8em; // 40px / 14px
+        font-family: "FontAwesome";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        // line-height: 1.325;
+        display: block;
+      }
+      span {
+        font-size: .9em; // 12px / 14px
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 3em;
+        text-align: left;
+      }
+      &:nth-child(1) {
+        border-radius: .6em 0 0 .6em; // 8px / 14px
+      }
+      &:last-child {
+        border-radius: 0 .6em .6em 0; // 8px / 14px
+      }
+    }
+  }
+}
+
+.pagination {
+  display: block;
+  width: 100%;
+  text-align: center;
+  .prev, .next {
+    font-size: .9em; // 12px / 14px
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 4.417;
+    text-align: center;
+    display: inline-block;
+    width: 195px;
+    line-height: 44px; // 44px / 14px
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+  }
+  .prev { background-image: url('/images/prev.png'); }
+  .next { background-image: url('/images/next.png'); }
+  .num {
+    display: inline-block;
+    margin: 0 -1em;
+    font-size: 18px; // 18px / 14px
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.944;
+    text-align: center;
+    // background-color: white;
+    // background-image: url('/images/pagination.png');
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    z-index: 100000;
+    position: relative;
+
+    &:after {
+      content: "";
+      border-radius: 8px;
+      background-color: rgb(63, 59, 72);
+      border: 4px solid rgb(255, 255, 255);
+      position: absolute;
+      width: 80px;
+      height: 55px;
+      left: 50%;
+      margin-left: calc(55px/-2);
+      z-index: 0;
+    }
+    &:before {
+      content: "";
+      border-radius: 50%;
+      border: solid 4px rgb(255, 255, 255);
+      background-color: rgb(63, 59, 72);
+      position: absolute;
+      width: 66px;
+      height: 66px;
+      top: 50%;
+      margin-top: calc(66px/-2);
+      z-index: 0;
+    }
+    sub {
+      // font-size: .9em; // 12px / 14px
+      // font-weight: bold;
+      // text-transform: uppercase;
+      line-height: 4.417;
+    }
+  }
+}
+
+h4 {
+  font-size: 1.3em; // 18px / 14px
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.944;
+}
+
+p {
+  font-size: .85em; // 12px / 14px
+  font-family: "Arial";
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.679;
+  text-align: left;
+  -moz-transform: matrix( 1.00002679551926,0,0,0.99239831612102,0,0);
+  -webkit-transform: matrix( 1.00002679551926,0,0,0.99239831612102,0,0);
+  -ms-transform: matrix( 1.00002679551926,0,0,0.99239831612102,0,0);
+}
+
+.link {
+  font-size: 1em; // 14px / 14px
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  padding-right: 2em;
+  text-decoration: none;
+  &:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  &:after {
+    content: '>';
+    margin-left: 1em;
+  }
+}
