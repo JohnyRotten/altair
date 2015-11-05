@@ -1,0 +1,64 @@
+.jumbotron {
+  background: transparent;
+  // margin-top: -70px;
+  background-image: url('/images/devices.png');
+  position: relative;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/mountain.png');
+    // background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+.big-text {
+  text-align: center;
+  &-one, &-two, &-three { display: inline-block; }
+  &-one { text-align: right; }
+  &-two { text-align: center; }
+  &-three { text-align: left; }
+  &-first {
+    display: inline-block;
+    font-size: 2.8em; // 40px / 14px
+    font-family: "Pacifico";
+    color: rgb(63, 59, 72);
+    line-height: 1.325;
+    text-align: center;
+    transform: matrix( 0.99826359527382,-0.0589049603259,0.0589049603259,0.99826359527381,0,0);
+  }
+  &-second {
+    font-size: 8.3em; // 122px / 14px
+    font-family: "KenyanCoffeeRg";
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.475;
+    text-align: center;
+  }
+  &-third, &-four {
+    font-size: 4em; // 56px / 14px
+    font-family: "KenyanCoffeeRg";
+    color: rgb(63, 59, 72);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.946;
+    text-align: center;
+  }
+  &-four {
+
+  }
+}
+
+.text-red {
+  color: red;
+}

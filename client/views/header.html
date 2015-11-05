@@ -1,0 +1,28 @@
+<template name="header">
+  <nav class="app-header navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">
+          <span>
+            <img src="/images/logo.png" alt="altair">
+            <span>Altair</span>
+          </span>
+        </a>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {{#each navs}}
+            {{>navItem}}
+          {{/each}}
+          <li class="navbar-email"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<template name="navItem">
+  <li class="{{class}}">
+    <a href="{{url}}">{{title}}</a>
+  </li>
+</template>
