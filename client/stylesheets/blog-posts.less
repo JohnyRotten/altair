@@ -1,0 +1,176 @@
+.blog-posts {
+  background-color: rgb(63, 59, 72);
+  width: 100%;
+  padding: 7em 0 5em;
+  position: relative;
+  .posts-slider {
+    list-style: none;
+    width: auto;
+    position: relative;
+    height: 486px;
+    padding: 0;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      background: linear-gradient(to left, rgb(63, 59, 72), transparent, rgb(63, 59, 72));
+      z-index: 1;
+    }
+    .slider-wrapper {
+      position: relative;
+      width: 100%;
+      height: 31em;
+      margin-bottom: 1em;
+    }
+    input[type=range] {
+      z-index: 10;
+    }
+    .slides {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1000%;
+      .post-preview {
+        background-color: rgb(89, 84, 102);
+        padding: 1em;
+        margin: 0 1em;
+        // height: 486px;
+        // width: 378px;
+        width: 23.15em;
+        overflow: hidden;
+        float: left;
+        position: relative;
+        // display: inline-block;
+        .post-image {
+          background-image: rgb(63, 59, 72);
+          position: relative;
+          width: 21.15em; // 298px / 14px
+          height: 18em; // 251px / 14px
+        }
+        main {
+          position: relative;
+        }
+        date {
+          position: absolute;
+          right: 0;
+          top: -4.5em;
+          border-radius: .15em;// 4px / 14px
+          font-family: "Montserrat";
+          background-color: rgb(255, 255, 255);
+          overflow: hidden;
+          text-align: center;
+          .num {
+            padding: .5em;
+            position: relative;
+            display: block;
+            font-size: 2.75em; // 38px / 14px
+            color: rgb(63, 59, 72);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 0.579;
+          }
+          .month {
+            position: relative;
+            display: block;
+            font-size: .8em; // 11px / 14px
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0 .2em;
+            line-height: 2;
+            background-color: rgb(63, 59, 72);
+          }
+        }
+        main {
+          padding: .5em;
+          author {
+            font-size: .75em; // 10px / 14px
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 2.6;
+          }
+          h6 {
+            font-size: 1em;// 14px / 14px
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.429;
+            hyphens: auto;
+          }
+          .post-link {
+            font-size: .75em; // 10px / 14px
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 2.6;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  // -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-color: rgb(47, 44, 54);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1),inset 0px 1px 1px 0px rgba(0, 0, 0, 0.37);
+  width: 100%;
+  height: .6em; // 8px / 14px
+  outline: none; /* no focus outline */
+}
+
+input[type="range"]::-moz-range-track {
+  border: inherit;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  border: inherit;
+  color: transparent; /* don't drawn vertical reference line */
+  background: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  background: transparent;
+}
+
+input[type="range"]::-ms-tooltip {
+  display: none;
+}
+
+/* thumb */
+
+.thumb-common {
+  width: 6.25em; // 88px / 14px
+  height: 1.8em; // 26px / 14px
+  // border-radius: 12px;
+  border: 0;
+  background-image: url('/images/thumb.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  .thumb-common;
+}
+input[type="range"]::-moz-range-thumb {
+  .thumb-common;
+}
+
+input[type="range"]::-ms-thumb {
+  .thumb-common;
+}
