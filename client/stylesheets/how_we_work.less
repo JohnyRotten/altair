@@ -1,0 +1,22 @@
+.how-we-work {
+  padding: 7em 0 15em;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -15em; // TODO change
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url('/images/how_we_work.png');
+    z-index: -1;
+  }
+  .btn-wrapper {
+    display: block;
+    text-align: center;
+    padding: 3em 0;
+  }
+}
