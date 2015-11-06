@@ -31,3 +31,58 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li { &>.fa { margin-right: .5em; } }
+
+
+.big-text {
+  text-align: center;
+  color: rgb(63, 59, 72);
+  margin-bottom: 3.5em;
+  &-column {
+    display: inline-block;
+    &:first-child { text-align: right; }
+    &:last-child { text-align: left; }
+  }
+  &-first {
+    display: inline-block;
+    font-size: 2.8em; // 40px / 14px
+    font-family: "Pacifico";
+    line-height: 1.325;
+    text-align: center;
+    transform: matrix( 0.99826359527382,-0.0589049603259,0.0589049603259,0.99826359527381,0,0);
+  }
+  &-second {
+    font-size: 8.3em; // 122px / 14px
+    font-family: "KenyanCoffeeRg";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.475;
+    text-align: center;
+  }
+  &-third, &-four {
+    font-size: 4em; // 56px / 14px
+    font-family: "KenyanCoffeeRg";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.946;
+    text-align: center;
+  }
+  &-five {
+    position: relative;
+    top: -.12em;
+    font-size: 7.2em; // 82px / 14px
+    font-family: "KenyanCoffeeRg";
+    color: rgb(63, 59, 72);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.061;
+    text-decoration: underline;
+    vertical-align: bottom;
+  }
+}
+
+.text-red {
+  color: rgb(255, 0, 0);
+}
+.text-white {
+  color: white;
+}
